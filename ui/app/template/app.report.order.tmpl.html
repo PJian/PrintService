@@ -1,0 +1,25 @@
+<div class="report-order">
+    <div class="container-fluid" *ngIf="order!==null">
+        <div class="row" style="width: 100%;margin-right: 0px;margin-left: 0px;margin-top: 10px;">
+            <label class="title" style="width: 100%;text-align: center">订单编号:{{order.ocode}}</label>
+        </div>
+        <div class="row" style="border-top: 2px gray solid">
+            <table class="content" style="width: 100%">
+                <thead>
+                    <tr>
+                        <th >商品名称</th>
+                        <th >重量</th>
+                        <th >单位</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr *ngFor="let good of order.goods">
+                        <td >{{good.gname}}</td>
+                        <td>{{good.gpreweight}}</td>
+                        <td>{{good.gunit}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

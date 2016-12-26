@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <div class="row top" style="height: 400px;">
+        <div class="col-sm-8" style="border: 1px solid grey;height: 100%;overflow: hidden;">
+            <order-table [orders]="orders" [mode]="'multi'" (selectionChanged)="selectionChanged($event)" (multiSelectionChanged)="multiSelectionChanged($event)"></order-table>
+        </div>
+        <div class="col-sm-4" style="height: 100%">
+            <p-fieldset legend="修改订单状态">
+                <div class="container-fluid" style="height: 320px;">
+                    <div class="row">
+                        <button class="btn-info btn-sm" (click)="updateOrderStatus2()">标记订单状态2</button>
+                        <button class="btn-info btn-sm buttonGroup" (click)="sendTextMsg()">发送短信</button>
+                    </div>
+                </div>
+            </p-fieldset>
+        </div>
+    </div>
+    <div class="row down" >
+        <good-table [goods]="selectedOrder===null?[]:selectedOrder.goods"></good-table>
+    </div>
+    <div class="row bottom">
+        <button class="btn-info btn-sm buttonGroup" (click)="getAMOrders()" >获取上午订单</button>
+        <button class="btn-info btn-sm buttonGroup" (click)="getPMOrders()" >获取下午订单</button>
+        <button class="btn-info btn-sm buttonGroup" (click)="getNSendTextMsgOrders()">获取未发送短信订单</button>
+    </div>
+</div>

@@ -1,0 +1,94 @@
+<div class="report-label" size="label-report" >
+    <div class="report-label-content" *ngIf="order!==null" style="padding: 0px;margin: 0px auto;">
+        <table style="padding:10px; margin: 0px auto">
+            <tr>
+                <img id="code128"/>
+            </tr>
+            <tr>
+                <td class="report-label-date" width="100%">日期:{{current_date | date:'yyyy-MM-dd HH:mm:ss'}}</td>
+            </tr>
+            <tr>
+                <table class="report-label-order-info" width="100%">
+                    <tr>
+                        <td width="20%">
+                            姓名:
+                        </td>
+                        <td width="40%" class="name">
+                            {{order.name}}
+                        </td>
+                        <td width="40%" class="delivery_way">
+                            {{order.delivery_way==='home'?'自提':''}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20%" >
+                            电话:
+                        </td>
+                        <td width="40%;" class="phone">
+                            {{order.phone}}
+                        </td>
+                        <td width="40%" class="uid">
+                            {{order.uid}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20%" >
+                            地址:
+                        </td>
+                        <td width="80%" colspan="2">
+                            {{order.addr}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20%" >
+                            取货点:
+                        </td>
+                        <td width="80%" colspan="2">
+                            {{order.shop}}
+                        </td>
+
+                    </tr>
+                </table>
+            </tr>
+            <tr>
+                <table class="report-label-good-info" width="100%" style="border-top: 2px black solid;border-bottom: 2px black solid;">
+                    <thead>
+                    <tr>
+                        <td>商品编号</td>
+                        <td>商品名称</td>
+                        <td>单价</td>
+                        <td>重量</td>
+                        <td>合计</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let good of order.goods">
+                        <td width="20%">{{good.gcode}}</td>
+                        <td width="50%">{{good.gname}}</td>
+                        <td width="10%">{{good.gunitprice | number:'1.1-2'}}</td>
+                        <td width="10%">{{good.gpreweight | number:'1.1-2'}}</td>
+                        <td width="10%">{{good.gpreprice  | number:'1.1-2'}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </tr>
+            <tr>
+                <table class="report-label-footer" width="100%">
+                    <tr>
+                        <td width="20%" style="text-align: left">派送费：</td>
+                        <td width="80%" style="text-align: right">
+                            {{order.freight | number:'1.1-2'}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="20%" style="text-align: left">合计：</td>
+                        <td width="80%" style="text-align: right">
+                            {{totalPrice | number:'1.1-2'}}
+                        </td>
+                    </tr>
+                </table>
+            </tr>
+        </table>
+
+    </div>
+</div>

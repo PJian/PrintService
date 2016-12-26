@@ -1,0 +1,280 @@
+STATUS | wrapperm | 2016/12/22 16:28:59 | Order print service service installed.
+STATUS | wrapper  | 2016/12/22 16:28:59 | --> Wrapper Started as Service
+STATUS | wrapper  | 2016/12/22 16:28:59 | Java Service Wrapper Community Edition 32-bit 3.5.30
+STATUS | wrapper  | 2016/12/22 16:28:59 |   Copyright (C) 1999-2016 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2016/12/22 16:28:59 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2016/12/22 16:28:59 | 
+WARN   | wrapper  | 2016/12/22 16:28:59 | ---------------------------------------------------------------------
+WARN   | wrapper  | 2016/12/22 16:28:59 | The JVM is being launched with a debugger enabled and could possibly
+WARN   | wrapper  | 2016/12/22 16:28:59 | be suspended.  To avoid unwanted shutdowns, timeouts will be
+WARN   | wrapper  | 2016/12/22 16:28:59 | disabled, removing the ability to detect and restart frozen JVMs.
+WARN   | wrapper  | 2016/12/22 16:28:59 | ---------------------------------------------------------------------
+STATUS | wrapper  | 2016/12/22 16:28:59 | Launching a JVM...
+INFO   | jvm 1    | 2016/12/22 16:29:00 | Listening for transport dt_socket at address: 8001
+INFO   | jvm 1    | 2016/12/22 16:29:00 | WrapperManager: Initializing...
+INFO   | jvm 1    | 2016/12/22 16:29:00 | WrapperSimpleApp Error: Unable to locate the class com.control.Main : java.lang.ClassNotFoundException: com.control.Main
+INFO   | jvm 1    | 2016/12/22 16:29:00 | 
+INFO   | jvm 1    | 2016/12/22 16:29:00 | WrapperSimpleApp Usage:
+INFO   | jvm 1    | 2016/12/22 16:29:00 | WrapperManager Error: Error in WrapperListener.start callback.  java.lang.IllegalArgumentException: can't parse argument number: app_class{/app_method}
+INFO   | jvm 1    | 2016/12/22 16:29:00 | WrapperManager Error: java.lang.IllegalArgumentException: can't parse argument number: app_class{/app_method}
+INFO   | jvm 1    | 2016/12/22 16:29:00 | WrapperManager Error: 	at java.text.MessageFormat.makeFormat(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:29:00 | WrapperManager Error: 	at java.text.MessageFormat.applyPattern(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:29:00 | WrapperManager Error: 	at java.text.MessageFormat.<init>(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:29:00 | WrapperManager Error: 	at java.text.MessageFormat.format(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:29:00 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperResources.getString(WrapperResources.java:194)
+INFO   | jvm 1    | 2016/12/22 16:29:00 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperSimpleApp.showUsage(WrapperSimpleApp.java:597)
+INFO   | jvm 1    | 2016/12/22 16:29:00 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperSimpleApp.start(WrapperSimpleApp.java:441)
+INFO   | jvm 1    | 2016/12/22 16:29:00 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperManager$11.run(WrapperManager.java:4253)
+INFO   | jvm 1    | 2016/12/22 16:29:00 | WrapperManager Error: Caused by: java.lang.NumberFormatException: For input string: "app_class{/app_method}"
+INFO   | jvm 1    | 2016/12/22 16:29:00 | WrapperManager Error: 	at java.lang.NumberFormatException.forInputString(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:29:00 | WrapperManager Error: 	at java.lang.Integer.parseInt(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:29:00 | WrapperManager Error: 	at java.lang.Integer.parseInt(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:29:00 | WrapperManager Error: 	... 8 more
+STATUS | wrapper  | 2016/12/22 16:29:02 | <-- Wrapper Stopped
+STATUS | wrapperm | 2016/12/22 16:29:08 | Order print service service removed.
+ERROR  | wrapperm | 2016/12/22 16:29:11 | The Order print service service is not installed - The specified service does not exist as an installed service. (0x424)
+STATUS | wrapperm | 2016/12/22 16:29:30 | Order print service service installed.
+STATUS | wrapper  | 2016/12/22 16:29:30 | --> Wrapper Started as Service
+STATUS | wrapper  | 2016/12/22 16:29:31 | Java Service Wrapper Community Edition 32-bit 3.5.30
+STATUS | wrapper  | 2016/12/22 16:29:31 |   Copyright (C) 1999-2016 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2016/12/22 16:29:31 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2016/12/22 16:29:31 | 
+WARN   | wrapper  | 2016/12/22 16:29:31 | ---------------------------------------------------------------------
+WARN   | wrapper  | 2016/12/22 16:29:31 | The JVM is being launched with a debugger enabled and could possibly
+WARN   | wrapper  | 2016/12/22 16:29:31 | be suspended.  To avoid unwanted shutdowns, timeouts will be
+WARN   | wrapper  | 2016/12/22 16:29:31 | disabled, removing the ability to detect and restart frozen JVMs.
+WARN   | wrapper  | 2016/12/22 16:29:31 | ---------------------------------------------------------------------
+STATUS | wrapper  | 2016/12/22 16:29:31 | Launching a JVM...
+INFO   | jvm 1    | 2016/12/22 16:29:31 | Listening for transport dt_socket at address: 8001
+INFO   | jvm 1    | 2016/12/22 16:29:31 | WrapperManager: Initializing...
+INFO   | jvm 1    | 2016/12/22 16:29:31 | WrapperSimpleApp Error: Unable to locate the class com.control.Main : java.lang.ClassNotFoundException: com.control.Main
+INFO   | jvm 1    | 2016/12/22 16:29:31 | 
+INFO   | jvm 1    | 2016/12/22 16:29:31 | WrapperSimpleApp Usage:
+INFO   | jvm 1    | 2016/12/22 16:29:31 | WrapperManager Error: Error in WrapperListener.start callback.  java.lang.IllegalArgumentException: can't parse argument number: app_class{/app_method}
+INFO   | jvm 1    | 2016/12/22 16:29:31 | WrapperManager Error: java.lang.IllegalArgumentException: can't parse argument number: app_class{/app_method}
+INFO   | jvm 1    | 2016/12/22 16:29:31 | WrapperManager Error: 	at java.text.MessageFormat.makeFormat(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:29:31 | WrapperManager Error: 	at java.text.MessageFormat.applyPattern(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:29:31 | WrapperManager Error: 	at java.text.MessageFormat.<init>(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:29:31 | WrapperManager Error: 	at java.text.MessageFormat.format(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:29:31 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperResources.getString(WrapperResources.java:194)
+INFO   | jvm 1    | 2016/12/22 16:29:31 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperSimpleApp.showUsage(WrapperSimpleApp.java:597)
+INFO   | jvm 1    | 2016/12/22 16:29:31 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperSimpleApp.start(WrapperSimpleApp.java:441)
+INFO   | jvm 1    | 2016/12/22 16:29:31 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperManager$11.run(WrapperManager.java:4253)
+INFO   | jvm 1    | 2016/12/22 16:29:31 | WrapperManager Error: Caused by: java.lang.NumberFormatException: For input string: "app_class{/app_method}"
+INFO   | jvm 1    | 2016/12/22 16:29:31 | WrapperManager Error: 	at java.lang.NumberFormatException.forInputString(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:29:31 | WrapperManager Error: 	at java.lang.Integer.parseInt(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:29:31 | WrapperManager Error: 	at java.lang.Integer.parseInt(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:29:31 | WrapperManager Error: 	... 8 more
+STATUS | wrapper  | 2016/12/22 16:29:33 | <-- Wrapper Stopped
+STATUS | wrapperm | 2016/12/22 16:29:46 | Order print service service removed.
+ERROR  | wrapperm | 2016/12/22 16:29:50 | The Order print service service is not installed - The specified service does not exist as an installed service. (0x424)
+STATUS | wrapperm | 2016/12/22 16:30:44 | Order print service service installed.
+STATUS | wrapper  | 2016/12/22 16:30:44 | --> Wrapper Started as Service
+STATUS | wrapper  | 2016/12/22 16:30:44 | Java Service Wrapper Community Edition 32-bit 3.5.30
+STATUS | wrapper  | 2016/12/22 16:30:44 |   Copyright (C) 1999-2016 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2016/12/22 16:30:44 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2016/12/22 16:30:44 | 
+WARN   | wrapper  | 2016/12/22 16:30:45 | ---------------------------------------------------------------------
+WARN   | wrapper  | 2016/12/22 16:30:45 | The JVM is being launched with a debugger enabled and could possibly
+WARN   | wrapper  | 2016/12/22 16:30:45 | be suspended.  To avoid unwanted shutdowns, timeouts will be
+WARN   | wrapper  | 2016/12/22 16:30:45 | disabled, removing the ability to detect and restart frozen JVMs.
+WARN   | wrapper  | 2016/12/22 16:30:45 | ---------------------------------------------------------------------
+STATUS | wrapper  | 2016/12/22 16:30:45 | Launching a JVM...
+INFO   | jvm 1    | 2016/12/22 16:30:45 | Listening for transport dt_socket at address: 8001
+INFO   | jvm 1    | 2016/12/22 16:30:45 | WrapperManager: Initializing...
+INFO   | jvm 1    | 2016/12/22 16:30:45 | WrapperSimpleApp Error: Unable to locate the class com.control.Main : java.lang.ClassNotFoundException: com.control.Main
+INFO   | jvm 1    | 2016/12/22 16:30:45 | 
+INFO   | jvm 1    | 2016/12/22 16:30:45 | WrapperSimpleApp Usage:
+INFO   | jvm 1    | 2016/12/22 16:30:45 | WrapperManager Error: Error in WrapperListener.start callback.  java.lang.IllegalArgumentException: can't parse argument number: app_class{/app_method}
+INFO   | jvm 1    | 2016/12/22 16:30:45 | WrapperManager Error: java.lang.IllegalArgumentException: can't parse argument number: app_class{/app_method}
+INFO   | jvm 1    | 2016/12/22 16:30:45 | WrapperManager Error: 	at java.text.MessageFormat.makeFormat(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:30:45 | WrapperManager Error: 	at java.text.MessageFormat.applyPattern(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:30:45 | WrapperManager Error: 	at java.text.MessageFormat.<init>(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:30:45 | WrapperManager Error: 	at java.text.MessageFormat.format(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:30:45 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperResources.getString(WrapperResources.java:194)
+INFO   | jvm 1    | 2016/12/22 16:30:45 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperSimpleApp.showUsage(WrapperSimpleApp.java:597)
+INFO   | jvm 1    | 2016/12/22 16:30:45 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperSimpleApp.start(WrapperSimpleApp.java:441)
+INFO   | jvm 1    | 2016/12/22 16:30:45 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperManager$11.run(WrapperManager.java:4253)
+INFO   | jvm 1    | 2016/12/22 16:30:45 | WrapperManager Error: Caused by: java.lang.NumberFormatException: For input string: "app_class{/app_method}"
+INFO   | jvm 1    | 2016/12/22 16:30:45 | WrapperManager Error: 	at java.lang.NumberFormatException.forInputString(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:30:45 | WrapperManager Error: 	at java.lang.Integer.parseInt(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:30:45 | WrapperManager Error: 	at java.lang.Integer.parseInt(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:30:45 | WrapperManager Error: 	... 8 more
+STATUS | wrapper  | 2016/12/22 16:30:47 | <-- Wrapper Stopped
+ERROR  | wrapperm | 2016/12/22 16:31:05 | Unable to install the Order print service service - The specified service already exists. (0x431)
+STATUS | wrapper  | 2016/12/22 16:31:29 | --> Wrapper Started as Service
+STATUS | wrapper  | 2016/12/22 16:31:29 | Java Service Wrapper Community Edition 32-bit 3.5.30
+STATUS | wrapper  | 2016/12/22 16:31:29 |   Copyright (C) 1999-2016 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2016/12/22 16:31:29 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2016/12/22 16:31:29 | 
+WARN   | wrapper  | 2016/12/22 16:31:30 | ---------------------------------------------------------------------
+WARN   | wrapper  | 2016/12/22 16:31:30 | The JVM is being launched with a debugger enabled and could possibly
+WARN   | wrapper  | 2016/12/22 16:31:30 | be suspended.  To avoid unwanted shutdowns, timeouts will be
+WARN   | wrapper  | 2016/12/22 16:31:30 | disabled, removing the ability to detect and restart frozen JVMs.
+WARN   | wrapper  | 2016/12/22 16:31:30 | ---------------------------------------------------------------------
+STATUS | wrapper  | 2016/12/22 16:31:30 | Launching a JVM...
+INFO   | jvm 1    | 2016/12/22 16:31:30 | Listening for transport dt_socket at address: 8001
+INFO   | jvm 1    | 2016/12/22 16:31:30 | WrapperManager: Initializing...
+INFO   | jvm 1    | 2016/12/22 16:31:30 | WrapperSimpleApp Error: Unable to locate the class com.control.Main : java.lang.ClassNotFoundException: com.control.Main
+INFO   | jvm 1    | 2016/12/22 16:31:30 | 
+INFO   | jvm 1    | 2016/12/22 16:31:30 | WrapperSimpleApp Usage:
+INFO   | jvm 1    | 2016/12/22 16:31:30 | WrapperManager Error: Error in WrapperListener.start callback.  java.lang.IllegalArgumentException: can't parse argument number: app_class{/app_method}
+INFO   | jvm 1    | 2016/12/22 16:31:30 | WrapperManager Error: java.lang.IllegalArgumentException: can't parse argument number: app_class{/app_method}
+INFO   | jvm 1    | 2016/12/22 16:31:30 | WrapperManager Error: 	at java.text.MessageFormat.makeFormat(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:31:30 | WrapperManager Error: 	at java.text.MessageFormat.applyPattern(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:31:30 | WrapperManager Error: 	at java.text.MessageFormat.<init>(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:31:30 | WrapperManager Error: 	at java.text.MessageFormat.format(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:31:30 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperResources.getString(WrapperResources.java:194)
+INFO   | jvm 1    | 2016/12/22 16:31:30 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperSimpleApp.showUsage(WrapperSimpleApp.java:597)
+INFO   | jvm 1    | 2016/12/22 16:31:30 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperSimpleApp.start(WrapperSimpleApp.java:441)
+INFO   | jvm 1    | 2016/12/22 16:31:30 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperManager$11.run(WrapperManager.java:4253)
+INFO   | jvm 1    | 2016/12/22 16:31:30 | WrapperManager Error: Caused by: java.lang.NumberFormatException: For input string: "app_class{/app_method}"
+INFO   | jvm 1    | 2016/12/22 16:31:30 | WrapperManager Error: 	at java.lang.NumberFormatException.forInputString(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:31:30 | WrapperManager Error: 	at java.lang.Integer.parseInt(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:31:30 | WrapperManager Error: 	at java.lang.Integer.parseInt(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:31:30 | WrapperManager Error: 	... 8 more
+STATUS | wrapper  | 2016/12/22 16:31:32 | <-- Wrapper Stopped
+ERROR  | wrapperm | 2016/12/22 16:31:37 | Unable to install the Order print service service - The specified service already exists. (0x431)
+ERROR  | wrapperm | 2016/12/22 16:31:59 | Unable to install the Order print service service - The specified service already exists. (0x431)
+STATUS | wrapper  | 2016/12/22 16:32:00 | --> Wrapper Started as Service
+STATUS | wrapper  | 2016/12/22 16:32:00 | Java Service Wrapper Community Edition 32-bit 3.5.30
+STATUS | wrapper  | 2016/12/22 16:32:00 |   Copyright (C) 1999-2016 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2016/12/22 16:32:00 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2016/12/22 16:32:00 | 
+WARN   | wrapper  | 2016/12/22 16:32:00 | ---------------------------------------------------------------------
+WARN   | wrapper  | 2016/12/22 16:32:00 | The JVM is being launched with a debugger enabled and could possibly
+WARN   | wrapper  | 2016/12/22 16:32:00 | be suspended.  To avoid unwanted shutdowns, timeouts will be
+WARN   | wrapper  | 2016/12/22 16:32:00 | disabled, removing the ability to detect and restart frozen JVMs.
+WARN   | wrapper  | 2016/12/22 16:32:00 | ---------------------------------------------------------------------
+STATUS | wrapper  | 2016/12/22 16:32:00 | Launching a JVM...
+INFO   | jvm 1    | 2016/12/22 16:32:01 | Listening for transport dt_socket at address: 8001
+INFO   | jvm 1    | 2016/12/22 16:32:01 | WrapperManager: Initializing...
+INFO   | jvm 1    | 2016/12/22 16:32:01 | WrapperSimpleApp Error: Unable to locate the class com.control.Main : java.lang.ClassNotFoundException: com.control.Main
+INFO   | jvm 1    | 2016/12/22 16:32:01 | 
+INFO   | jvm 1    | 2016/12/22 16:32:01 | WrapperSimpleApp Usage:
+INFO   | jvm 1    | 2016/12/22 16:32:01 | WrapperManager Error: Error in WrapperListener.start callback.  java.lang.IllegalArgumentException: can't parse argument number: app_class{/app_method}
+INFO   | jvm 1    | 2016/12/22 16:32:01 | WrapperManager Error: java.lang.IllegalArgumentException: can't parse argument number: app_class{/app_method}
+INFO   | jvm 1    | 2016/12/22 16:32:01 | WrapperManager Error: 	at java.text.MessageFormat.makeFormat(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:32:01 | WrapperManager Error: 	at java.text.MessageFormat.applyPattern(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:32:01 | WrapperManager Error: 	at java.text.MessageFormat.<init>(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:32:01 | WrapperManager Error: 	at java.text.MessageFormat.format(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:32:01 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperResources.getString(WrapperResources.java:194)
+INFO   | jvm 1    | 2016/12/22 16:32:01 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperSimpleApp.showUsage(WrapperSimpleApp.java:597)
+INFO   | jvm 1    | 2016/12/22 16:32:01 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperSimpleApp.start(WrapperSimpleApp.java:441)
+INFO   | jvm 1    | 2016/12/22 16:32:01 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperManager$11.run(WrapperManager.java:4253)
+INFO   | jvm 1    | 2016/12/22 16:32:01 | WrapperManager Error: Caused by: java.lang.NumberFormatException: For input string: "app_class{/app_method}"
+INFO   | jvm 1    | 2016/12/22 16:32:01 | WrapperManager Error: 	at java.lang.NumberFormatException.forInputString(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:32:01 | WrapperManager Error: 	at java.lang.Integer.parseInt(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:32:01 | WrapperManager Error: 	at java.lang.Integer.parseInt(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:32:01 | WrapperManager Error: 	... 8 more
+STATUS | wrapper  | 2016/12/22 16:32:02 | <-- Wrapper Stopped
+STATUS | wrapperm | 2016/12/22 16:32:13 | Order print service service removed.
+STATUS | wrapperm | 2016/12/22 16:32:15 | Order print service service installed.
+STATUS | wrapper  | 2016/12/22 16:32:15 | --> Wrapper Started as Service
+STATUS | wrapper  | 2016/12/22 16:32:15 | Java Service Wrapper Community Edition 32-bit 3.5.30
+STATUS | wrapper  | 2016/12/22 16:32:15 |   Copyright (C) 1999-2016 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2016/12/22 16:32:15 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2016/12/22 16:32:15 | 
+WARN   | wrapper  | 2016/12/22 16:32:15 | ---------------------------------------------------------------------
+WARN   | wrapper  | 2016/12/22 16:32:15 | The JVM is being launched with a debugger enabled and could possibly
+WARN   | wrapper  | 2016/12/22 16:32:15 | be suspended.  To avoid unwanted shutdowns, timeouts will be
+WARN   | wrapper  | 2016/12/22 16:32:15 | disabled, removing the ability to detect and restart frozen JVMs.
+WARN   | wrapper  | 2016/12/22 16:32:15 | ---------------------------------------------------------------------
+STATUS | wrapper  | 2016/12/22 16:32:15 | Launching a JVM...
+INFO   | jvm 1    | 2016/12/22 16:32:16 | Listening for transport dt_socket at address: 8001
+INFO   | jvm 1    | 2016/12/22 16:32:16 | WrapperManager: Initializing...
+INFO   | jvm 1    | 2016/12/22 16:32:16 | WrapperSimpleApp Error: Unable to locate the class com.control.Main : java.lang.ClassNotFoundException: com.control.Main
+INFO   | jvm 1    | 2016/12/22 16:32:16 | 
+INFO   | jvm 1    | 2016/12/22 16:32:16 | WrapperSimpleApp Usage:
+INFO   | jvm 1    | 2016/12/22 16:32:16 | WrapperManager Error: Error in WrapperListener.start callback.  java.lang.IllegalArgumentException: can't parse argument number: app_class{/app_method}
+INFO   | jvm 1    | 2016/12/22 16:32:16 | WrapperManager Error: java.lang.IllegalArgumentException: can't parse argument number: app_class{/app_method}
+INFO   | jvm 1    | 2016/12/22 16:32:16 | WrapperManager Error: 	at java.text.MessageFormat.makeFormat(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:32:16 | WrapperManager Error: 	at java.text.MessageFormat.applyPattern(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:32:16 | WrapperManager Error: 	at java.text.MessageFormat.<init>(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:32:16 | WrapperManager Error: 	at java.text.MessageFormat.format(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:32:16 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperResources.getString(WrapperResources.java:194)
+INFO   | jvm 1    | 2016/12/22 16:32:16 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperSimpleApp.showUsage(WrapperSimpleApp.java:597)
+INFO   | jvm 1    | 2016/12/22 16:32:16 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperSimpleApp.start(WrapperSimpleApp.java:441)
+INFO   | jvm 1    | 2016/12/22 16:32:16 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperManager$11.run(WrapperManager.java:4253)
+INFO   | jvm 1    | 2016/12/22 16:32:16 | WrapperManager Error: Caused by: java.lang.NumberFormatException: For input string: "app_class{/app_method}"
+INFO   | jvm 1    | 2016/12/22 16:32:16 | WrapperManager Error: 	at java.lang.NumberFormatException.forInputString(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:32:16 | WrapperManager Error: 	at java.lang.Integer.parseInt(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:32:16 | WrapperManager Error: 	at java.lang.Integer.parseInt(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:32:16 | WrapperManager Error: 	... 8 more
+STATUS | wrapper  | 2016/12/22 16:32:17 | <-- Wrapper Stopped
+STATUS | wrapperm | 2016/12/22 16:32:19 | Order print service service removed.
+STATUS | wrapperm | 2016/12/22 16:34:22 | Order print service service installed.
+STATUS | wrapper  | 2016/12/22 16:34:22 | --> Wrapper Started as Service
+STATUS | wrapper  | 2016/12/22 16:34:22 | Java Service Wrapper Community Edition 32-bit 3.5.30
+STATUS | wrapper  | 2016/12/22 16:34:22 |   Copyright (C) 1999-2016 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2016/12/22 16:34:22 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2016/12/22 16:34:22 | 
+WARN   | wrapper  | 2016/12/22 16:34:23 | ---------------------------------------------------------------------
+WARN   | wrapper  | 2016/12/22 16:34:23 | The JVM is being launched with a debugger enabled and could possibly
+WARN   | wrapper  | 2016/12/22 16:34:23 | be suspended.  To avoid unwanted shutdowns, timeouts will be
+WARN   | wrapper  | 2016/12/22 16:34:23 | disabled, removing the ability to detect and restart frozen JVMs.
+WARN   | wrapper  | 2016/12/22 16:34:23 | ---------------------------------------------------------------------
+STATUS | wrapper  | 2016/12/22 16:34:23 | Launching a JVM...
+INFO   | jvm 1    | 2016/12/22 16:34:23 | Listening for transport dt_socket at address: 8001
+INFO   | jvm 1    | 2016/12/22 16:34:23 | WrapperManager: Initializing...
+INFO   | jvm 1    | 2016/12/22 16:34:23 | WrapperSimpleApp Error: Unable to locate the class com.control.Main : java.lang.ClassNotFoundException: com.control.Main
+INFO   | jvm 1    | 2016/12/22 16:34:23 | 
+INFO   | jvm 1    | 2016/12/22 16:34:23 | WrapperSimpleApp Usage:
+INFO   | jvm 1    | 2016/12/22 16:34:23 | WrapperManager Error: Error in WrapperListener.start callback.  java.lang.IllegalArgumentException: can't parse argument number: app_class{/app_method}
+INFO   | jvm 1    | 2016/12/22 16:34:23 | WrapperManager Error: java.lang.IllegalArgumentException: can't parse argument number: app_class{/app_method}
+INFO   | jvm 1    | 2016/12/22 16:34:23 | WrapperManager Error: 	at java.text.MessageFormat.makeFormat(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:34:23 | WrapperManager Error: 	at java.text.MessageFormat.applyPattern(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:34:23 | WrapperManager Error: 	at java.text.MessageFormat.<init>(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:34:23 | WrapperManager Error: 	at java.text.MessageFormat.format(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:34:23 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperResources.getString(WrapperResources.java:194)
+INFO   | jvm 1    | 2016/12/22 16:34:23 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperSimpleApp.showUsage(WrapperSimpleApp.java:597)
+INFO   | jvm 1    | 2016/12/22 16:34:23 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperSimpleApp.start(WrapperSimpleApp.java:441)
+INFO   | jvm 1    | 2016/12/22 16:34:23 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperManager$11.run(WrapperManager.java:4253)
+INFO   | jvm 1    | 2016/12/22 16:34:23 | WrapperManager Error: Caused by: java.lang.NumberFormatException: For input string: "app_class{/app_method}"
+INFO   | jvm 1    | 2016/12/22 16:34:23 | WrapperManager Error: 	at java.lang.NumberFormatException.forInputString(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:34:23 | WrapperManager Error: 	at java.lang.Integer.parseInt(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:34:23 | WrapperManager Error: 	at java.lang.Integer.parseInt(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:34:23 | WrapperManager Error: 	... 8 more
+STATUS | wrapper  | 2016/12/22 16:34:25 | <-- Wrapper Stopped
+ERROR  | wrapperm | 2016/12/22 16:34:57 | Unable to install the Order print service service - The specified service already exists. (0x431)
+STATUS | wrapperm | 2016/12/22 16:35:31 | Order print service service removed.
+ERROR  | wrapperm | 2016/12/22 16:35:33 | The Order print service service is not installed - The specified service does not exist as an installed service. (0x424)
+STATUS | wrapperm | 2016/12/22 16:35:39 | Order print service service installed.
+STATUS | wrapper  | 2016/12/22 16:35:39 | --> Wrapper Started as Service
+STATUS | wrapper  | 2016/12/22 16:35:39 | Java Service Wrapper Community Edition 32-bit 3.5.30
+STATUS | wrapper  | 2016/12/22 16:35:39 |   Copyright (C) 1999-2016 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2016/12/22 16:35:39 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2016/12/22 16:35:39 | 
+WARN   | wrapper  | 2016/12/22 16:35:39 | ---------------------------------------------------------------------
+WARN   | wrapper  | 2016/12/22 16:35:39 | The JVM is being launched with a debugger enabled and could possibly
+WARN   | wrapper  | 2016/12/22 16:35:39 | be suspended.  To avoid unwanted shutdowns, timeouts will be
+WARN   | wrapper  | 2016/12/22 16:35:39 | disabled, removing the ability to detect and restart frozen JVMs.
+WARN   | wrapper  | 2016/12/22 16:35:39 | ---------------------------------------------------------------------
+STATUS | wrapper  | 2016/12/22 16:35:39 | Launching a JVM...
+INFO   | jvm 1    | 2016/12/22 16:35:40 | Listening for transport dt_socket at address: 8001
+INFO   | jvm 1    | 2016/12/22 16:35:40 | WrapperManager: Initializing...
+INFO   | jvm 1    | 2016/12/22 16:35:40 | WrapperSimpleApp Error: Unable to locate the class com.control.Main : java.lang.ClassNotFoundException: com.control.Main
+INFO   | jvm 1    | 2016/12/22 16:35:40 | 
+INFO   | jvm 1    | 2016/12/22 16:35:40 | WrapperSimpleApp Usage:
+INFO   | jvm 1    | 2016/12/22 16:35:40 | WrapperManager Error: Error in WrapperListener.start callback.  java.lang.IllegalArgumentException: can't parse argument number: app_class{/app_method}
+INFO   | jvm 1    | 2016/12/22 16:35:40 | WrapperManager Error: java.lang.IllegalArgumentException: can't parse argument number: app_class{/app_method}
+INFO   | jvm 1    | 2016/12/22 16:35:40 | WrapperManager Error: 	at java.text.MessageFormat.makeFormat(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:35:40 | WrapperManager Error: 	at java.text.MessageFormat.applyPattern(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:35:40 | WrapperManager Error: 	at java.text.MessageFormat.<init>(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:35:40 | WrapperManager Error: 	at java.text.MessageFormat.format(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:35:40 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperResources.getString(WrapperResources.java:194)
+INFO   | jvm 1    | 2016/12/22 16:35:40 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperSimpleApp.showUsage(WrapperSimpleApp.java:597)
+INFO   | jvm 1    | 2016/12/22 16:35:40 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperSimpleApp.start(WrapperSimpleApp.java:441)
+INFO   | jvm 1    | 2016/12/22 16:35:40 | WrapperManager Error: 	at org.tanukisoftware.wrapper.WrapperManager$11.run(WrapperManager.java:4253)
+INFO   | jvm 1    | 2016/12/22 16:35:40 | WrapperManager Error: Caused by: java.lang.NumberFormatException: For input string: "app_class{/app_method}"
+INFO   | jvm 1    | 2016/12/22 16:35:40 | WrapperManager Error: 	at java.lang.NumberFormatException.forInputString(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:35:40 | WrapperManager Error: 	at java.lang.Integer.parseInt(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:35:40 | WrapperManager Error: 	at java.lang.Integer.parseInt(Unknown Source)
+INFO   | jvm 1    | 2016/12/22 16:35:40 | WrapperManager Error: 	... 8 more
+STATUS | wrapper  | 2016/12/22 16:35:41 | <-- Wrapper Stopped
+STATUS | wrapperm | 2016/12/22 16:35:45 | Order print service service removed.
+ERROR  | wrapperm | 2016/12/22 16:50:32 | The Order print service service is not installed - The specified service does not exist as an installed service. (0x424)
+STATUS | wrapperm | 2016/12/22 17:04:16 | Service is running.  Stopping it...
+STATUS | wrapperm | 2016/12/22 17:04:19 | Order print service service stopped.
+STATUS | wrapperm | 2016/12/22 17:04:19 | Order print service service removed.
+ERROR  | wrapperm | 2016/12/22 17:04:32 | The Order print service service is not installed - The specified service does not exist as an installed service. (0x424)

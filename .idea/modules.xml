@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Application/Application.iml" filepath="$PROJECT_DIR$/Application/Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrintService.iml" filepath="$PROJECT_DIR$/PrintService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wrapper/Wrapper.iml" filepath="$PROJECT_DIR$/Wrapper/Wrapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/deployer/deployer.iml" filepath="$PROJECT_DIR$/deployer/deployer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui/ui.iml" filepath="$PROJECT_DIR$/ui/ui.iml" />
+    </modules>
+  </component>
+</project>

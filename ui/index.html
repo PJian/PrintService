@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/bootstrap-3.3.5.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="node_modules/primeng/resources/themes/omega/theme.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/primeng/resources/primeng.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/metro-icons.min.css">
+    <link rel="import" href="bower_components/iron-flex-layout/iron-flex-layout.html">
+    <link rel="import" href="bower_components/paper-styles/color.html">
+    <link rel="import" href="bower_components/paper-styles/default-theme.html">
+    <link rel="import" href="bower_components/paper-styles/typography.html">
+    <link rel="import" href="bower_components/paper-styles/shadow.html">
+    <style is="custom-style">
+        body {
+            @apply(--layout-fullbleed);
+            @apply(--paper-font-body1);
+            background: var(--primary-background-color);
+            color: var(--primary-text-color);
+        }
+        vaadin-grid {
+            --vaadin-grid-row-height: 24px;
+        }
+    </style>
+    <link rel="import" href="bower_components/iron-icons/iron-icons.html">
+    <link rel="import" href="bower_components/app-layout/app-layout.html">
+    <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="bower_components/paper-input/paper-input.html">
+    <link rel="import" href="bower_components/vaadin-grid/vaadin-grid.html">
+    <link rel="import" href="bower_components/vaadin-date-picker/vaadin-date-picker.html">
+
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+    <script src="bower_components/pdfmake/build/pdfmake.min.js"></script>
+    <script src="bower_components/pdfmake/build/vfs_fonts.js"></script>
+
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <!-- Insert this line above script imports  -->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <!-- normal script imports etc  -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/jquery.blockUI.js"></script>
+
+    <!-- Insert this line after script imports -->
+    <script>if (window.module) module = window.module;</script>
+
+
+    <script src="system.js.config.js"></script>
+
+    <script>
+        System.import('app').catch(function (err) {
+            console.error(err);
+        });
+    </script>
+
+    <title>OMP</title>
+
+    <base href="app/">
+</head>
+<body>
+    <my-app>Loading...</my-app>
+</body>
+</html>

@@ -1,0 +1,117 @@
+* {transition: none !important}
+@media screen {
+
+    td{
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .report-label-date{
+        font-size:12pt;
+        font-family: '宋体';
+        text-align: left;
+    }
+    .report-label-order-info{
+        font-size: 14pt;
+        font-family: '宋体';
+    }
+    .report-label-order-info td{
+        text-align: left;
+        vertical-align: text-top;
+        font-weight:bold;
+    }
+
+    .name,.phone{
+        font-size: 18pt;
+    }
+    .delivery_way,.uid{
+        font-family: "Times New Roman";
+        font-size: 20pt;
+    }
+
+    .report-label-good-info{
+        font-size:12pt;
+        font-family: '宋体';
+        text-align: left;
+    }
+
+    .report-label-footer{
+        font-size:12pt;
+        font-family: '宋体';
+    }
+    .report-label-content{
+        font-family: '宋体';
+        background-color: white;
+        width: 400px;
+    }
+}
+
+@media print {
+
+    @page { margin: 0cm }
+
+    td{
+        text-align: left;
+        vertical-align: top;
+    }
+    .report-label, .report-label *{
+        visibility: visible;
+    }
+
+    .report-label-order-info td{
+        font-weight: bold;
+    }
+
+    .report-label-date{
+        font-size:8pt;
+        font-family: '宋体';
+        text-align: left;
+    }
+    .report-label-order-info{
+        font-size: 9pt;
+        font-family: '宋体';
+        font-weight: bold;
+    }
+
+
+    /*.report-label-good-info{
+        font-size:10pt;
+        font-family: '宋体';
+    }*/
+
+    .name{
+        font-size: 11pt;
+    }
+    .phone{
+        font-size: 11pt;
+    }
+    .delivery_way{
+        font-family: "Times New Roman";
+        font-size: 13pt;
+    }
+    .uid{
+        font-family: "Times New Roman";
+        font-size: 13pt;
+    }
+    .report-label-good-info td{
+        font-size:7pt;
+        font-family: '宋体';
+    }
+
+    .report-label-footer{
+        font-size:7pt;
+        font-family: '宋体';
+    }
+    .report-label-content{
+        font-family: '宋体';
+        background-color: white;
+        width: 300px;
+        position: fixed;
+        top:0;
+        left:0;
+        margin: 0;
+        padding: 0;
+    }
+
+
+}

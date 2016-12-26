@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <div class="row top" style="height: 400px;overflow: auto;">
+        <div class="col-sm-6" style="border: 1px solid grey;height: 100%;overflow: hidden;">
+            <order-table [orders]="orders" [mode]="'single'" (selectionChanged)="selectionChanged($event)"></order-table>
+        </div>
+        <div class="col-sm-6" style="height: 400px;overflow: auto;">
+            <good-edit-table [goods]="selectedOrder===null?[]:selectedOrder.goods"></good-edit-table>
+        </div>
+    </div>
+    <div class="row bottom" style="position: absolute;bottom: 0px;">
+        <button class="btn-info btn-sm buttonGroup" (click)="getArrivedOrders()" >获取已送达订单</button>
+        <button class="btn-info btn-sm buttonGroup" (click)="update()" ng>提交修改</button>
+    </div>
+</div>

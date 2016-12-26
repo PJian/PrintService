@@ -1,0 +1,111 @@
+<div class="container-fluid">
+    <div class="row top" style="height: 400px;">
+        <div class="col-sm-6" style="border: 1px solid grey;height: 100%;overflow: hidden;">
+            <order-table [orders]="orders" [mode]="'single'" (selectionChanged)="selectionChanged($event)"></order-table>
+        </div>
+       <div class="col-sm-6" style="height: 100%">
+           <p-fieldset legend="预览">
+               <div class="container-fluid" style="height: 55px;">
+                   <button class="btn-info btn-sm" (click)="previewLable(modalContentLabel)">标签</button>
+                   <button class="btn-info btn-sm buttonGroup" (click)="previewOrder(modalContentOrder)">订单</button>
+               </div>
+           </p-fieldset>
+           <div style="margin-top:10px;">
+               <p-fieldset legend="订单信息" >
+                   <div class="container-fluid order-detail" style="height: 180px;">
+                       <div class="row" style="text-align: left">
+                           <div class="col-sm-2 title">
+                               <label >订单编号:</label>
+                           </div>
+                           <div class="col-sm-4">
+                               <label >{{selectedOrder===null?'':selectedOrder.ocode}}</label>
+                           </div>
+                           <div class="col-sm-2 title" >
+                               <label >配送时间:</label>
+                           </div>
+                           <div class="col-sm-4">
+                               <label >{{selectedOrder===null?'':selectedOrder.time}}</label>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col-sm-2 title">
+                               <label >姓名:</label>
+                           </div>
+                           <div class="col-sm-4">
+                               <label >{{selectedOrder===null?'':selectedOrder.name}}</label>
+                           </div>
+                           <div class="col-sm-2 title">
+                               <label>uid:</label>
+                           </div>
+                           <div class="col-sm-4">
+                               <label >{{selectedOrder===null?'':selectedOrder.uid}}</label>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col-sm-2 title">
+                               <label >取货点:</label>
+                           </div>
+                           <div class="col-sm-4">
+                               <label >{{selectedOrder===null?'':selectedOrder.shop}}</label>
+                           </div>
+                           <div class="col-sm-2 title">
+                               <label >电话:</label>
+                           </div>
+                           <div class="col-sm-4">
+                               <label >{{selectedOrder===null?'':selectedOrder.phone}}</label>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col-sm-2 title">
+                               <label >地址:</label>
+                           </div>
+                           <div class="col-sm-9">
+                               <label >{{selectedOrder===null?'':selectedOrder.addr}}</label>
+                           </div>
+                       </div>
+                   </div>
+               </p-fieldset>
+           </div>
+        </div>
+    </div>
+    <div class="row down" style="height: 400px;overflow: auto;border: 1px solid grey;">
+        <good-table [goods]="selectedOrder===null?[]:selectedOrder.goods"></good-table>
+    </div>
+    <div class="row bottom">
+        <button class="btn-info btn-sm buttonGroup" (click)="getAMOrders()" >获取上午订单</button>
+        <button class="btn-info btn-sm buttonGroup" (click)="getPMOrders()" >获取下午订单</button>
+        <button class="btn-info btn-sm buttonGroup" (click)="getCancelOrders()">获取已取消订单</button>
+    </div>
+    <!--print modal-->
+    <template #modalContentLabel let-c="close" let-d="dismiss">
+        <div class="modal-header">
+            <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">标签预览及打印</h4>
+        </div>
+        <div class="modal-body" class="preview-div" style="overflow: auto;height: 500px;">
+            <label-report [order]="selectedOrder" #orderReport></label-report>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" (click)="orderReport.print()">打印</button>
+            <button type="button" class="btn btn-secondary" (click)="c('close')">取消</button>
+        </div>
+    </template>
+    <!--print modal-->
+    <template #modalContentOrder let-c="close" let-d="dismiss">
+        <div class="modal-header">
+            <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">订单预览及打印</h4>
+        </div>
+        <div class="modal-body" class="preview-div" style="overflow: auto;">
+            <order-report [order]="selectedOrder" #labelReport style="margin:10px auto"></order-report>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" (click)="labelReport.print()">打印</button>
+            <button type="button" class="btn btn-secondary" (click)="c('close')">取消</button>
+        </div>
+    </template>
+</div>

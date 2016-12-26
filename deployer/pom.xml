@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>PrintService</artifactId>
+        <groupId>PrintService</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>deployer</artifactId>
+    <packaging>pom</packaging>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>${maven-plugin-exec.version}</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <executable>C:\Program Files (x86)\BitRock InstallBuilder Enterprise 16.11.1\bin\builder</executable>
+                    <arguments>
+                        <argument>build</argument>
+                        <argument>src/main/resources/installer/project.xml</argument>
+                        <argument>windows</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.0.2</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>target/installer</outputDirectory>
+                            <nonFilteredFileExtensions>
+                                <nonFilteredFileExtension>exe</nonFilteredFileExtension>
+                                <nonFilteredFileExtension>ico</nonFilteredFileExtension>
+                                <nonFilteredFileExtension>dll</nonFilteredFileExtension>
+                                <nonFilteredFileExtension>jar</nonFilteredFileExtension>
+                                <nonFilteredFileExtension>bat</nonFilteredFileExtension>
+                            </nonFilteredFileExtensions>
+                            <resources>
+                                <resource>
+                                    <directory>${project.basedir}/../Wrapper/target/Wrapper-${parent.version}</directory>
+                                    <filtering>false</filtering>
+                                </resource>
+                                <resource>
+                                    <directory>${project.basedir}/../ui/target/app-win32-x64</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

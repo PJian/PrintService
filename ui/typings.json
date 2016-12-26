@@ -1,0 +1,10 @@
+{
+  "globalDependencies": {
+    "core-js": "registry:dt/core-js#0.0.0+20160725163759",
+    "jasmine": "registry:dt/jasmine#2.2.0+20160621224255",
+    "jquery": "registry:dt/jquery#6.0.0+20160909174046",
+    "jquery.blockui": "registry:dt/jquery.blockui#0.0.0+20160316155526",
+    "jsbarcode": "node_modules/jsbarcode/jsbarcode.d.ts",
+    "node": "registry:dt/node#6.0.0+20160909174046"
+  }
+}

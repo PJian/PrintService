@@ -1,0 +1,24 @@
+@media print {
+    .report-order, .report-order *{
+        visibility: visible;
+    }
+    .report-order{
+        font-family: '宋体';
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 10px;
+        left: 0;
+        margin: 0;
+        line-height: 20pt;
+    }
+    .report-order .title{
+        font-size: 20pt;
+        font-weight: bold;
+        height: 30pt;
+    }
+    .report-order .content{
+        font-size: 10pt;
+    }
+}

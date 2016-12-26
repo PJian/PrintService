@@ -1,0 +1,48 @@
+{
+  "name": "OMP",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": {
+    "name": "Jian Pei",
+    "email": "peijian214@126.com"
+  },
+  "keywords": [
+    "Electron"
+  ],
+  "scripts": {
+    "start": "./node_modules/.bin/electron ./app.js",
+    "package":"asar pack . app.asar --unpack *.ts,*.json --unpack-dir bower_components",
+    "package-win": "electron-packager . app --overwrite --platform=win32 --arch=x64 --icon=./logo.ico --prune=true --out=target --version-string.CompanyName='JP' --version-string.FileDescription='Order printer app' --version-string.ProductName='Order printer app'"
+  },
+  "dependencies": {
+    "@angular/common": "~2.1.0",
+    "@angular/compiler": "~2.1.0",
+    "@angular/core": "~2.1.0",
+    "@angular/forms": "~2.1.0",
+    "@angular/http": "~2.1.0",
+    "@angular/platform-browser": "~2.1.0",
+    "@angular/platform-browser-dynamic": "~2.1.0",
+    "@angular/router": "~3.1.0",
+    "@angular/upgrade": "~2.1.0",
+    "@ng-bootstrap/ng-bootstrap": "^1.0.0-alpha.10",
+    "@types/jquery": "^2.0.33",
+    "@vaadin/angular2-polymer": "^1.0.0-beta5",
+    "angular-in-memory-web-api": "~0.1.5",
+    "angular2-datagrid": "^1.0.6",
+    "bootstrap": "^3.3.7",
+    "core-js": "^2.4.1",
+    "jsbarcode": "^3.5.5",
+    "primeng": "^1.0.0-rc.3",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "systemjs": "0.19.39",
+    "zone.js": "^0.6.25"
+  },
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "concurrently": "^3.0.0",
+    "lite-server": "^2.2.2",
+    "typescript": "^2.0.3",
+    "typings": "^1.4.0"
+  }
+}

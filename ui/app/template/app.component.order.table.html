@@ -1,0 +1,41 @@
+<div [ngSwitch]="mode">
+    <div *ngSwitchCase="'multi'" style="height: 100%;">
+        <vaadin-grid [items]="orders" selection-mode="multi"
+                     (selected-items-changed)="onSelectedItemsChanged($event)"  visible-rows="14">
+            <table style="font-size: 12px;height: 100%;">
+                <colgroup>
+                    <col name="ocode">
+                    <col name="uid">
+                    <col name="name">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>ocode</th>
+                    <th>uid</th>
+                    <th>name</th>
+                </tr>
+                </thead>
+            </table>
+        </vaadin-grid>
+    </div>
+    <div *ngSwitchDefault style="height: 100%;">
+        <vaadin-grid [items]="orders" selection-mode="single"
+                     (selected-items-changed)="onSelectedItemsChanged($event)"  visible-rows="14">
+            <table style="font-size: 12px;">
+                <colgroup>
+                    <col name="ocode">
+                    <col name="uid">
+                    <col name="name">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>ocode</th>
+                    <th>uid</th>
+                    <th>name</th>
+                </tr>
+                </thead>
+            </table>
+        </vaadin-grid>
+    </div>
+</div>
+

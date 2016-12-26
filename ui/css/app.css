@@ -1,0 +1,81 @@
+h1 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+}
+
+h2, h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+body {
+    margin: 2em;
+}
+
+.order-detail {
+    text-align: left;
+    height: 180px;
+
+}
+
+.order-detail label {
+    font-weight: 500;
+}
+
+.order-detail div .title {
+    width: 70px;
+}
+
+.order-detail div {
+    padding: 0px;
+}
+
+.report-order .title {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.report-order .content {
+    font-size: 10pt;
+}
+
+table th, table td {
+    text-align: center;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+}
+
+.top {
+    height: 400px;
+    overflow: auto;
+}
+
+.down {
+    height: 400px;
+    overflow: auto;
+    border: 1px solid grey;
+}
+
+.bottom {
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.buttonGroup {
+    margin-left: 10px;
+}
+
+/*hidden report div*/
+/*
+@media screen {
+    #report-order,#report-label{
+        display:none;
+    }
+}*/
+

@@ -1,0 +1,29 @@
+<assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.0.0 http://maven.apache.org/xsd/assembly-2.0.0.xsd">
+    <id>Wrapper</id>
+    <formats>
+        <format>dir</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <directory>src/main/resources</directory>
+            <outputDirectory>/</outputDirectory>
+        </fileSet>
+        <!-- report template-->
+        <fileSet>
+            <directory>../Application/src/main/resources</directory>
+            <outputDirectory>/lib</outputDirectory>
+        </fileSet>
+    </fileSets>
+
+    <dependencySets>
+        <dependencySet>
+            <useProjectArtifact>true</useProjectArtifact>
+            <outputDirectory>lib</outputDirectory><!-- 将scope为runtime的依赖包打包到lib目录下。 -->
+            <includes></includes>
+        </dependencySet>
+    </dependencySets>
+
+</assembly>
