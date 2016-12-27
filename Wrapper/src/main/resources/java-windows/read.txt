@@ -1,0 +1,1 @@
+when build ,should download a jre here.
